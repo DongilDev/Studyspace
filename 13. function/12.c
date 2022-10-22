@@ -11,6 +11,7 @@ int main(void)
 	if (radix < 2 || radix>16)
 	{
 		printf("2 에서 16진법 까지만 변환 가능합니다 \n");
+		return 0;
 	}
 
 	printf("변환하고 싶은 수 입력 : ");
