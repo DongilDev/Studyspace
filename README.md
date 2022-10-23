@@ -1,7 +1,6 @@
 # Study Algorithm
 ## Baekjoon
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={DongilDev})](https://solved.ac/{DongilDev})
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=kdi2514)](https://solved.ac/kdi2514/)
 ## CodeUp
 ### C언어 기초100제
 - [ ] 220529 - 1001 ~ 1015 (출력, 입출력)
