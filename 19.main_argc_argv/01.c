@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int charToInt(char* number);
+
 int main(int argc, char** argv) {
 	int num1, num2;
 
@@ -20,18 +21,16 @@ int main(int argc, char** argv) {
 }
 
 int charToInt(char* number) {
-	int decimation = 1;
 	int i = 0;
 	int result = 0;
+	int number_place = 1;
 
 	while (number[i]) i++;
 
 	while (i) {
-		i--; /* 현재 number[i]가 NULL을 가리키므로 먼저 한 번 빼준다.*/
-
-		result += (number[i] - 48) * decimation;
-
-		decimation *= 10;
+		i--; 
+		result += (number[i] - 48) * number_place;
+		number_place *= 10;
 	}
 
 	return result;
