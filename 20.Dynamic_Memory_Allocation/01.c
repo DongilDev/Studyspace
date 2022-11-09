@@ -61,8 +61,6 @@ void set_average(int** arr, int subjects, int students, Student* brr) {
 void student_sort_with_aver(Student* brr, int students) {
 	int i, j;
 	Student tmp;
-	int index = 0;
-	double max;
 
 	for (i = 0; i < students; i++) {
 		for (j = 0; j < students - i - 1; j++) {
