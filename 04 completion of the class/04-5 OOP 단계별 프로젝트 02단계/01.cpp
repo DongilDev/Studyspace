@@ -85,9 +85,10 @@ int main(void)
 			ShowAllAccInfo();
 			break;
 		case EXIT:
+			cout << "프로그램을 종료합니다." << endl;
 			return 0;
 		default:
-			cout << "Illegal selection.." << endl;
+			cout << "잘못된 입력입니다. 다시 입력해 주세요" << endl;
 		}
 	}
 
