@@ -27,14 +27,14 @@ public:
 		strcpy(cusName, name);
 	}
 
-	int GetAccID() { return accID; }
+	int GetAccID() const { return accID; }
 
-	void Deposit(int money)
+	void Deposit(const int money)
 	{
 		balance += money;
 	}
 
-	int Withdraw(int money)    // 출금액 반환, 부족 시 0
+	int Withdraw(const int money)    // 출금액 반환, 부족 시 0
 	{
 		if (balance < money)
 			return 0;
@@ -43,14 +43,14 @@ public:
 		return money;
 	}
 
-	void ShowAccInfo()
+	void ShowAccInfo() const
 	{
 		cout << "계좌ID: " << accID << endl;
 		cout << "이  름: " << cusName << endl;
 		cout << "잔  액: " << balance << endl;
 	}
 
-	~Account()
+	~Account() 
 	{
 		delete[]cusName;
 	}
