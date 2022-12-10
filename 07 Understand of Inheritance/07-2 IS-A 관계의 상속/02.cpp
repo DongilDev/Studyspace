@@ -19,6 +19,10 @@ public:
 		cout << "ISBN: " << isbn << endl;
 		cout << "가격: " << price << endl;
 	}
+	~Book() {
+		delete []title;
+		delete []isbn;
+	}
 };
 
 class EBook : public Book {
@@ -31,6 +35,9 @@ public:
 	void ShowEBookInfo() {
 		ShowBookInfo();
 		cout << "인증키: " << DRMKey << endl;
+	}
+	~EBook() {
+		delete []DRMKey;
 	}
 };
 

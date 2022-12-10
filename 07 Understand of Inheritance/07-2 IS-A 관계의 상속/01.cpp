@@ -14,9 +14,8 @@ public:
 };
 
 class Square : public Rectangle {
-	int length; // 길이
 public:
-	Square(int _length) : Rectangle(_length, _length), length(_length) {}
+	Square(int side) : Rectangle(side, side), length(side) {}
 };
 
 int main() {
