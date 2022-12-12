@@ -1,5 +1,5 @@
 #ifndef __ACCOUNT_H__
-#define __ACCOUNT_
+#define __ACCOUNT_H__
 
 class Account {
 	int accID;
