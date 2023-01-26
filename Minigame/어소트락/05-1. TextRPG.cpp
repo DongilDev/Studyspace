@@ -859,6 +859,7 @@ int main()
 			RunStore(&tPlayer.tInventory, tStoreWeapon, tStoreArmor);
 			break;
 		case MM_INVENTORY:
+			RunInventory(&tPlayer);
 			break;
 		case MM_EXIT:
 			bLoop = false;
